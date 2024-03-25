@@ -13,6 +13,18 @@ h1, h2, h3, h4 {
 }
 
 header{
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    z-index: 50;
+}
+
+.back_fixed {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 45px;
@@ -41,13 +53,14 @@ main{
     justify-content: space-between;
     width: 1140px;
     height: 179;
-    margin-top: 116px;
+    margin-top: 206.77px;
 }
 
 
 .first_mini {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .first_mini img{
@@ -69,6 +82,7 @@ main{
 .nav li {
     color: #4F5665;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 
@@ -77,16 +91,31 @@ main{
     align-items: center;
 }
 
+.sign a {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.96px;
+}
+
 .sign_btn{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #F53855;
-    color: #F53855;
     border-radius: 50px;
     width: 150px;
     height: 45px;
     margin-left: 30px;
+}
+
+.sign_btn a {
+    color: #F53855;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.96px;
+    padding: 13px 45px;
+    border-radius: 50px;
 }
 
 .main_block {
@@ -374,8 +403,9 @@ main{
     height: 60px;
     background-color: #F53838;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 40px 30px -15px rgba(245,56,56,0.35);
+    box-shadow: 0px 15px 50px 5px rgba(245,56,56,0.35);
 }
+
 
 .get_start_btn a {
     color: white;
@@ -392,5 +422,107 @@ main{
 .advantages {
     width: 1140px;
     height: 200px;
-    background-color: aqua;
+    margin-top: 67.5px;
+}
+
+
+.shadow_2 {
+    width: 1068.84px;
+    height: 189.22px;
+    box-shadow: 0px 42.02px 40px 0px rgba(13,16,37,0.06);
+    
+}
+
+.advantages_list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 91px;
+}
+
+.advantages_list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4F5665;
+}
+
+.icon {
+    margin-right: 36.5px;
+}
+
+.big {
+    font-size: 25px;
+    color: black;
+}
+
+.advantages_list li::after{
+    content: url(./img/partition/partion.svg);
+    margin-left: 130px;
+}
+
+
+.advantages_list li:last-child::after {
+    content: "";
+}
+
+
+.third_block {
+    display: flex;
+    justify-content: center;
+}
+
+.third_section {
+    margin-top: 107.98px;
+    display: flex;
+    width: 1140px;
+}
+
+.second_img {
+    width: 50%;
+}
+
+.second_text {
+    width: 50%;
+    margin-left: 185px;
+}
+
+.we_provide {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.cheak{
+    position: relative;
+    margin-top: 20px;
+}
+
+.cheak li {
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 30px;
+    color: #4F5665;
+    margin-left: 34.8px;
+    margin-top: 15px;
+}
+
+
+.cheak li::before {
+    content: url(./img/icon/Group1120.svg);
+    position: absolute;
+    left: 0px;
+}
+
+.cheak li:first-child {
+    margin-top: 0px;
+}
+
+
+.nothing {
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+    height: 300px;
 }
